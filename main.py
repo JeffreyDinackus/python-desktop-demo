@@ -26,7 +26,7 @@ app.exec()
 
 
 #VERSION 2 : setting up a seperate class
-
+"""
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton 
 class ButtonHolder(QMainWindow):
@@ -37,6 +37,17 @@ class ButtonHolder(QMainWindow):
         #Set up the button as our central widget
         self.setCentralWidget(button)
 app = QApplication(sys.argv)
+window = ButtonHolder()
+window.show() 
+app.exec()
+"""
+
+#version 3
+import sys
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton 
+from button_holder import ButtonHolder
+app = QApplication(sys.argv)
+
 window = ButtonHolder()
 window.show() 
 app.exec()
