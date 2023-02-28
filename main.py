@@ -49,5 +49,5 @@ from button_holder import ButtonHolder
 app = QApplication(sys.argv)
 
 window = ButtonHolder()
-window.show() 
+window.show()
 app.exec()
